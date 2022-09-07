@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Container } from '@mui/material';
+import { blue, grey } from '@mui/material/colors';
+import { bgcolor, color } from '@mui/system';
+import GetPosts from './components/GetPosts';
+import Posts from './components/Posts';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+			<Posts />
+			<GetPosts />
+		</Container>
+	);
 }
 
 export default App;
